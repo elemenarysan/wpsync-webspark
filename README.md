@@ -54,7 +54,7 @@ define( 'WC_PRODUCTS_IMPORT_URL', 'api_url_to_data' );
  php wp-cli.phar products
 ```
 
-начать импорт, процесс значительно продолжителен
+Выполнить импорт, процесс значительно продолжителен
 ```
  php wp-cli.phar products importStart
 ```
