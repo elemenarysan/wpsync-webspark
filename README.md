@@ -13,16 +13,18 @@
 - WooCommerce 6.2+
 
 
-# Предустанова
+# Предустановка
 
-- Установить ОС
+
+- Установить ОС / Хост
 - Поднять базу
-- Настроить хост
+- Настроить Web сервер
 - Установить WordPress
 - Установить и активировать WooCommerce
 
 
 ## Установить wp-cli
+В корне проекта
 ```
  curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
  chmod +x wp-cli.phar
@@ -52,7 +54,7 @@ define( 'WC_PRODUCTS_IMPORT_URL', 'api_url_to_data' );
  php wp-cli.phar products
 ```
 
-начать импорт
+начать импорт, процесс значительно продолжителен
 ```
  php wp-cli.phar products importStart
 ```
