@@ -45,7 +45,7 @@ git clone https://github.com/elemenarysan/wpsync-webspark.git
 define( 'WC_PRODUCTS_IMPORT_URL', 'api_url_to_data' );
 ```
 
-# работа с плагином
+# Работа с плагином
 ## Запуск импорта из командной строки
 Из корня проекта
 
@@ -81,3 +81,13 @@ define( 'WC_PRODUCTS_IMPORT_URL', 'api_url_to_data' );
 - Ссылка Остановить , чтоб остановить
 - Ссылка Лог импорта , чтоб открыть лог импорта
 
+## Регулярный запуск
+Открыть crontab
+```
+crontab -e
+```
+
+И доббавить строку
+```
+*/1 * * *  php /path_pto_app/wp-cli.phar products importStart >/dev/null 2>/dev/null
+```
