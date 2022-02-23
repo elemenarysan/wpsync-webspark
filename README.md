@@ -23,11 +23,11 @@
 
 
 ## Установить wp-cli
-> curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-
-> chmod +x wp-cli.phar
-
->php wp-cli.phar --info
+```
+ curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+ chmod +x wp-cli.phar
+ php wp-cli.phar --info
+```
 
 # Установка плагина
 ## Скачивание и активация
@@ -48,19 +48,29 @@ define( 'WC_PRODUCTS_IMPORT_URL', 'api_url_to_data' );
 Из корня проекта
 
 Справка / перечень команд
-> php wp-cli.phar products
+```
+ php wp-cli.phar products
+```
 
 начать импорт
-> php wp-cli.phar products importStart
+```
+ php wp-cli.phar products importStart
+```
 
 Остановить импорт
-> php wp-cli.phar products importStop
+```
+ php wp-cli.phar products importStop
+```
 
 Проверить статус импорта
-> php wp-cli.phar products importCheck
+```
+ php wp-cli.phar products importCheck
+```
 
 Посмотреть лог
-> cat wp-content/plugins/wpsync-webspark/import.log
+```
+ cat wp-content/plugins/wpsync-webspark/import.log
+```
 
 ## Веб интерфейс
 Кабинет админа - Товары - Импорт товаров (/wp-admin/edit.php?post_type=product&page=wc-product-import)
