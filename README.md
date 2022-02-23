@@ -13,7 +13,7 @@
 - WooCommerce 6.2+
 
 
-# предустанова
+# Предустанова
 
 - Установить ОС
 - Поднять базу
@@ -24,26 +24,30 @@
 
 ## Установить wp-cli
 > curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
 > chmod +x wp-cli.phar
+
 >php wp-cli.phar --info
 
 # Установка плагина
-## Скачивание а активация
-В папке плагинов (wp-content/plugins) выполнить 
-
->git clone https://github.com/elemenarysan/wpsync-webspark.git
-
+## Скачивание и активация
+В папке плагинов (wp-content/plugins) выполнить
+```
+git clone https://github.com/elemenarysan/wpsync-webspark.git
+```
 В кабинете админа - плагины (/wp-admin/plugins.php) активировать плагин wpsync-webspark
 
 ## Настройка
 В файле настноек wp-config.php прописать опцию
->define( 'WC_PRODUCTS_IMPORT_URL', 'api_url_to_data' );
+```
+define( 'WC_PRODUCTS_IMPORT_URL', 'api_url_to_data' );
+```
 
 # работа с плагином
 ## Запуск импорта из командной строки
 Из корня проекта
 
-Справка
+Справка / перечень команд
 > php wp-cli.phar products
 
 начать импорт
