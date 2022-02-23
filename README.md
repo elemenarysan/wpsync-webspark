@@ -89,5 +89,5 @@ crontab -e
 
 И доббавить строку
 ```
-*/1 * * *  php /path_pto_app/wp-cli.phar products importStart >/dev/null 2>/dev/null
+* */1  * * *  php /path_pto_app/wp-cli.phar products importStart >/dev/null 2>/dev/null
 ```
